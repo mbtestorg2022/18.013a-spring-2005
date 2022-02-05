@@ -7,83 +7,720 @@ uid: e8cdc347-f062-2f11-96ad-2879f268cc73
 Glossary of Notations
 ---------------------
 
-| NOTATION | MEANING |
-| --- | --- |
-| i | The square root of minus one |
-| f(x) | The value of the function f at argument x |
-| sin(x) | The value of the sine function at argument x |
-| exp(x) | The value of the exponential function at argument x. This is often written as ex |
-| a^x | The number a raised to the power x; for rational x is defined by inverse functions |
-| ln x | The inverse function to exp x |
-| ax | Same as a^x |
-| logba | The power you must raise b to in order to get a; blogba = a |
-| cos x | The value of the cosine function (complement of the sine) at argument x |
-| tan x | Works out to be sin x/cos x |
-| cot x | The value of the complement of the tangent function or cos x/sin x |
-| sec x | Value of the secant function, which turns out to be 1/cos x |
-| csc x | Value of the complement of the secant, called the cosecant. It is 1/sin x |
-| asin x | The value, y, of the inverse function to the sine at argument x. Means x = sin y |
-| acos x | The value, y, of the inverse function to cosine at argument x. Means x = cos y |
-| atan x | The value, y, of the inverse function to tangent at argument x. Means x = tan y |
-| acot x | The value, y, of the inverse function to cotangent at argument x. Means x = cot y |
-| asec x | The value, y, of the inverse function to secant at argument x. Means x = sec y |
-| acsc x | The value, y, of the inverse function to cosecant at argument x. Means x = csc y |
-| θ | A standard symbol for angle. Measured in radians unless stated otherwise. Used especially for atan x/y when x, y, and z are variables used to describe point in three dimensional space |
-| i, j, k | Unit vectors in the x y and z directions respectively |
-| (a, b, c) | A vector with x component a, y component b and z component c |
-| (a, b) | A vector with x component a, y component b |
-| (a, b) | The dot product of vectors a and b |
-| a•b | The dot product of vectors a and b |
-| (a•b) | The dot product of vectors a and b |
-| &#124;v&#124; | The magnitude of the vector v |
-| &#124;x&#124; | The absolute value of the number x |
-| Σ | Used to denote a summation, usually the index and often their end values are written under it with upper end value above it. For example the sum of j for j=1 to n is written as ![](/courses/mathematics/18-013a-calculus-with-applications-spring-2005/study-materials/glossary_eqn1.jpg). This signifies 1 + 2 + … + n |
-| M | Used to represent a matrix or array of numbers or other entities |
-| &#124;v> | A column vector, that is one whose components are written as a column and treated as a k by 1 matrix |
-| <v&#124; | A vector written as a row, or 1 by k matrix |
-| dx | An "infinitesimal" or very small change in the variable x; also similarly dy, dz, dr etc... |
-| ds | A small change in distance |
-| ρ | The variable (x2 + y2 + z2)1/2 or distance to the origin in spherical coordinates |
-| r | The variable (x2 + y2)1/2 or distance to the z axis in three dimensions or in polar coordinates |
-| &#124;M&#124; | The determinant of a matrix M (whose magnitude is the area or volume of the parallel sided region determined by its columns or rows) |
-| &#124;&#124;M&#124;&#124; | The magnitude of the determinant of the matrix M, which is a volume or area or hypervolume |
-| det M | The determinant of M |
-| M\-1 | The inverse of the matrix M |
-| v×w | The vector product or cross product of two vectors, v and w |
-| θvw | The angle made by vectors v and w |
-| A•B×C | The scalar triple product, the determinant of the matrix formed by columns A, B, C |
-| uw | A unit vector in the direction of the vector w; it means the same as w/&#124;w&#124; |
-| df | A very small change in the function f, sufficiently small that the linear approximation to all relevant functions holds for such changes |
-| df/dx | The derivative of f with respect to x, which is the slope of the linear approximation to f |
-| f ' | The derivative of f with respect to the relevant variable, usually x |
-| ∂f/∂x | The partial derivative of f with respect to x, keeping y, and z fixed. In general a partial derivative of f with respect to a variable q is the ratio of df to dq when certain other variables are held fixed. Where there is possible misunderstanding over which variables are to be fixed that information should be made explicit |
-| (∂f/∂x)&#124;r,z | The partial derivative of f with respect to x keeping r and z fixed |
-| grad f | The vector field whose components are the partial derivatives of the function f with respect to x, y and z: \[(∂f/∂x), (∂f/∂y), (∂f/∂z)\] or (∂f/∂x)i + (∂f/∂y)j + (∂f/∂z)k; called the gradient of f |
-| ∇ | The vector operator (∂/∂x)i + (∂/∂x)j + (∂/∂x)k, called "del" |
-| ∇f | The gradient of f; its dot product with uw is the directional derivative of f in the direction of w |
-| ∇•w | The divergence of the vector field w; it is the dot product of the vector operator ∇ with the vector w, or (∂wx /∂x) + (∂wy /∂y) + (∂wz /∂z) |
-| curl w | The cross product of the vector operator ∇ with the vector w |
-| ∇×w | The curl of w, with components \[(∂fz /∂y) - (∂fy /∂z), (∂fx /∂z) - (∂fz /∂x), (∂fy /∂x) - (∂fx /∂y)\] |
-| ∇•∇ | The Laplacian, the differential operator: (∂2/∂x2) + (∂/∂y2) + (∂/∂z2) |
-| f "(x) | The second derivative of f with respect to x; the derivative of f '(x) |
-| d2f/dx2 | The second derivative of f with respect to x |
-| f(2)(x) | Still another form for the second derivative of f with respect to x |
-| f(k)(x) | The k-th derivative of f with respect to x; the derivative of f(k-1) (x) |
-| T | Unit tangent vector along a curve; if curve is described by r(t), T = (dr/dt)/&#124;dr/dt&#124; |
-| ds | A differential of distance along a curve |
-| κ | The curvature of a curve; the magnitude of the derivative of its unit tangent vector with respect to distance on the curve: &#124;dT/ds&#124; |
-| N | A unit vector in the direction of the projection of dT/ds normal to T |
-| B | A unit vector normal to the plane of T and N, which is the plane of curvature |
-| τ | The torsion of a curve; &#124;dB/ds&#124; |
-| g | The gravitational constant |
-| F | The standard symbol for force in mechanics |
-| k | The spring constant of a spring |
-| pi | The momentum of the i-th particle |
-| H | The Hamiltonian of a physical system, which is its energy expressed in terms of {ri} and {pi}, position and momentum |
-| {Q, H} | The Poisson bracket of Q and H |
-| ![](/courses/mathematics/18-013a-calculus-with-applications-spring-2005/study-materials/glossary_eqn2.jpg) | An antiderivative of f(x) expressed as a function of x |
-| ![](/courses/mathematics/18-013a-calculus-with-applications-spring-2005/study-materials/glossary_eqn3.jpg) | The definite integral of f from a to b. When f is positive and a < b holds, then this is the area between the x axis the lines y = a, y = b and the curve that represents the function f between these lines |
-| L(d) | A Riemann sum with uniform interval size d and f evaluated at the left end of each subinterval |
-| R(d) | A Riemann sum with uniform interval size d and f evaluated at the right end of each subinterval |
-| M(d) | A Riemann sum with uniform interval size d and f evaluated at the maximum point of f in each subinterval |
-| m(d) | A Riemann sum with uniform interval size d and f evaluated at the minimum point of f in each subinterval
+{{< tableopen >}}
+{{< theadopen >}}
+{{< tropen >}}
+{{< thopen >}}
+NOTATION
+{{< thclose >}}
+{{< thopen >}}
+MEANING
+{{< thclose >}}
+
+{{< trclose >}}
+
+{{< theadclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+i
+{{< tdclose >}}
+{{< tdopen >}}
+The square root of minus one
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+f(x)
+{{< tdclose >}}
+{{< tdopen >}}
+The value of the function f at argument x
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+sin(x)
+{{< tdclose >}}
+{{< tdopen >}}
+The value of the sine function at argument x
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+exp(x)
+{{< tdclose >}}
+{{< tdopen >}}
+The value of the exponential function at argument x. This is often written as ex
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+a^x
+{{< tdclose >}}
+{{< tdopen >}}
+The number a raised to the power x; for rational x is defined by inverse functions
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+ln x
+{{< tdclose >}}
+{{< tdopen >}}
+The inverse function to exp x
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+ax
+{{< tdclose >}}
+{{< tdopen >}}
+Same as a^x
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+logba
+{{< tdclose >}}
+{{< tdopen >}}
+The power you must raise b to in order to get a; blogba = a
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+cos x
+{{< tdclose >}}
+{{< tdopen >}}
+The value of the cosine function (complement of the sine) at argument x
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+tan x
+{{< tdclose >}}
+{{< tdopen >}}
+Works out to be sin x/cos x
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+cot x
+{{< tdclose >}}
+{{< tdopen >}}
+The value of the complement of the tangent function or cos x/sin x
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+sec x
+{{< tdclose >}}
+{{< tdopen >}}
+Value of the secant function, which turns out to be 1/cos x
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+csc x
+{{< tdclose >}}
+{{< tdopen >}}
+Value of the complement of the secant, called the cosecant. It is 1/sin x
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+asin x
+{{< tdclose >}}
+{{< tdopen >}}
+The value, y, of the inverse function to the sine at argument x. Means x = sin y
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+acos x
+{{< tdclose >}}
+{{< tdopen >}}
+The value, y, of the inverse function to cosine at argument x. Means x = cos y
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+atan x
+{{< tdclose >}}
+{{< tdopen >}}
+The value, y, of the inverse function to tangent at argument x. Means x = tan y
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+acot x
+{{< tdclose >}}
+{{< tdopen >}}
+The value, y, of the inverse function to cotangent at argument x. Means x = cot y
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+asec x
+{{< tdclose >}}
+{{< tdopen >}}
+The value, y, of the inverse function to secant at argument x. Means x = sec y
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+acsc x
+{{< tdclose >}}
+{{< tdopen >}}
+The value, y, of the inverse function to cosecant at argument x. Means x = csc y
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+θ
+{{< tdclose >}}
+{{< tdopen >}}
+A standard symbol for angle. Measured in radians unless stated otherwise. Used especially for atan x/y when x, y, and z are variables used to describe point in three dimensional space
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+i, j, k
+{{< tdclose >}}
+{{< tdopen >}}
+Unit vectors in the x y and z directions respectively
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+(a, b, c)
+{{< tdclose >}}
+{{< tdopen >}}
+A vector with x component a, y component b and z component c
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+(a, b)
+{{< tdclose >}}
+{{< tdopen >}}
+A vector with x component a, y component b
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+(a, b)
+{{< tdclose >}}
+{{< tdopen >}}
+The dot product of vectors a and b
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+a•b
+{{< tdclose >}}
+{{< tdopen >}}
+The dot product of vectors a and b
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+(a•b)
+{{< tdclose >}}
+{{< tdopen >}}
+The dot product of vectors a and b
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+|v|
+{{< tdclose >}}
+{{< tdopen >}}
+The magnitude of the vector v
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+|x|
+{{< tdclose >}}
+{{< tdopen >}}
+The absolute value of the number x
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+Σ
+{{< tdclose >}}
+{{< tdopen >}}
+Used to denote a summation, usually the index and often their end values are written under it with upper end value above it. For example the sum of j for j=1 to n is written as ![](/courses/mathematics/18-013a-calculus-with-applications-spring-2005/study-materials/glossary_eqn1.jpg). This signifies 1 + 2 + … + n
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+M
+{{< tdclose >}}
+{{< tdopen >}}
+Used to represent a matrix or array of numbers or other entities
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+|v>
+{{< tdclose >}}
+{{< tdopen >}}
+A column vector, that is one whose components are written as a column and treated as a k by 1 matrix
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+\<v|
+{{< tdclose >}}
+{{< tdopen >}}
+A vector written as a row, or 1 by k matrix
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+dx
+{{< tdclose >}}
+{{< tdopen >}}
+An "infinitesimal" or very small change in the variable x; also similarly dy, dz, dr etc...
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+ds
+{{< tdclose >}}
+{{< tdopen >}}
+A small change in distance
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+ρ
+{{< tdclose >}}
+{{< tdopen >}}
+The variable (x2 + y2 + z2)1/2 or distance to the origin in spherical coordinates
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+r
+{{< tdclose >}}
+{{< tdopen >}}
+The variable (x2 + y2)1/2 or distance to the z axis in three dimensions or in polar coordinates
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+|M|
+{{< tdclose >}}
+{{< tdopen >}}
+The determinant of a matrix M (whose magnitude is the area or volume of the parallel sided region determined by its columns or rows)
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+||M||
+{{< tdclose >}}
+{{< tdopen >}}
+The magnitude of the determinant of the matrix M, which is a volume or area or hypervolume
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+det M
+{{< tdclose >}}
+{{< tdopen >}}
+The determinant of M
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+M\-1
+{{< tdclose >}}
+{{< tdopen >}}
+The inverse of the matrix M
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+v×w
+{{< tdclose >}}
+{{< tdopen >}}
+The vector product or cross product of two vectors, v and w
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+θvw
+{{< tdclose >}}
+{{< tdopen >}}
+The angle made by vectors v and w
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+A•B×C
+{{< tdclose >}}
+{{< tdopen >}}
+The scalar triple product, the determinant of the matrix formed by columns A, B, C
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+uw
+{{< tdclose >}}
+{{< tdopen >}}
+A unit vector in the direction of the vector w; it means the same as w/|w|
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+df
+{{< tdclose >}}
+{{< tdopen >}}
+A very small change in the function f, sufficiently small that the linear approximation to all relevant functions holds for such changes
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+df/dx
+{{< tdclose >}}
+{{< tdopen >}}
+The derivative of f with respect to x, which is the slope of the linear approximation to f
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+f '
+{{< tdclose >}}
+{{< tdopen >}}
+The derivative of f with respect to the relevant variable, usually x
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+∂f/∂x
+{{< tdclose >}}
+{{< tdopen >}}
+The partial derivative of f with respect to x, keeping y, and z fixed. In general a partial derivative of f with respect to a variable q is the ratio of df to dq when certain other variables are held fixed. Where there is possible misunderstanding over which variables are to be fixed that information should be made explicit
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+(∂f/∂x)|r,z
+{{< tdclose >}}
+{{< tdopen >}}
+The partial derivative of f with respect to x keeping r and z fixed
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+grad f
+{{< tdclose >}}
+{{< tdopen >}}
+The vector field whose components are the partial derivatives of the function f with respect to x, y and z: \[(∂f/∂x), (∂f/∂y), (∂f/∂z)\] or (∂f/∂x)i + (∂f/∂y)j + (∂f/∂z)k; called the gradient of f
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+∇
+{{< tdclose >}}
+{{< tdopen >}}
+The vector operator (∂/∂x)i + (∂/∂x)j + (∂/∂x)k, called "del"
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+∇f
+{{< tdclose >}}
+{{< tdopen >}}
+The gradient of f; its dot product with uw is the directional derivative of f in the direction of w
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+∇•w
+{{< tdclose >}}
+{{< tdopen >}}
+The divergence of the vector field w; it is the dot product of the vector operator ∇ with the vector w, or (∂wx /∂x) + (∂wy /∂y) + (∂wz /∂z)
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+curl w
+{{< tdclose >}}
+{{< tdopen >}}
+The cross product of the vector operator ∇ with the vector w
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+∇×w
+{{< tdclose >}}
+{{< tdopen >}}
+The curl of w, with components \[(∂fz /∂y) - (∂fy /∂z), (∂fx /∂z) - (∂fz /∂x), (∂fy /∂x) - (∂fx /∂y)\]
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+∇•∇
+{{< tdclose >}}
+{{< tdopen >}}
+The Laplacian, the differential operator: (∂2/∂x2) + (∂/∂y2) + (∂/∂z2)
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+f "(x)
+{{< tdclose >}}
+{{< tdopen >}}
+The second derivative of f with respect to x; the derivative of f '(x)
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+d2f/dx2
+{{< tdclose >}}
+{{< tdopen >}}
+The second derivative of f with respect to x
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+f(2)(x)
+{{< tdclose >}}
+{{< tdopen >}}
+Still another form for the second derivative of f with respect to x
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+f(k)(x)
+{{< tdclose >}}
+{{< tdopen >}}
+The k-th derivative of f with respect to x; the derivative of f(k-1) (x)
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+T
+{{< tdclose >}}
+{{< tdopen >}}
+Unit tangent vector along a curve; if curve is described by r(t), T = (dr/dt)/|dr/dt|
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+ds
+{{< tdclose >}}
+{{< tdopen >}}
+A differential of distance along a curve
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+κ
+{{< tdclose >}}
+{{< tdopen >}}
+The curvature of a curve; the magnitude of the derivative of its unit tangent vector with respect to distance on the curve: |dT/ds|
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+N
+{{< tdclose >}}
+{{< tdopen >}}
+A unit vector in the direction of the projection of dT/ds normal to T
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+B
+{{< tdclose >}}
+{{< tdopen >}}
+A unit vector normal to the plane of T and N, which is the plane of curvature
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+τ
+{{< tdclose >}}
+{{< tdopen >}}
+The torsion of a curve; |dB/ds|
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+g
+{{< tdclose >}}
+{{< tdopen >}}
+The gravitational constant
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+F
+{{< tdclose >}}
+{{< tdopen >}}
+The standard symbol for force in mechanics
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+k
+{{< tdclose >}}
+{{< tdopen >}}
+The spring constant of a spring
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+pi
+{{< tdclose >}}
+{{< tdopen >}}
+The momentum of the i-th particle
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+H
+{{< tdclose >}}
+{{< tdopen >}}
+The Hamiltonian of a physical system, which is its energy expressed in terms of {ri} and {pi}, position and momentum
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+{Q, H}
+{{< tdclose >}}
+{{< tdopen >}}
+The Poisson bracket of Q and H
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+![](/courses/mathematics/18-013a-calculus-with-applications-spring-2005/study-materials/glossary_eqn2.jpg)
+{{< tdclose >}}
+{{< tdopen >}}
+An antiderivative of f(x) expressed as a function of x
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+![](/courses/mathematics/18-013a-calculus-with-applications-spring-2005/study-materials/glossary_eqn3.jpg)
+{{< tdclose >}}
+{{< tdopen >}}
+The definite integral of f from a to b. When f is positive and a \< b holds, then this is the area between the x axis the lines y = a, y = b and the curve that represents the function f between these lines
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+L(d)
+{{< tdclose >}}
+{{< tdopen >}}
+A Riemann sum with uniform interval size d and f evaluated at the left end of each subinterval
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+R(d)
+{{< tdclose >}}
+{{< tdopen >}}
+A Riemann sum with uniform interval size d and f evaluated at the right end of each subinterval
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+M(d)
+{{< tdclose >}}
+{{< tdopen >}}
+A Riemann sum with uniform interval size d and f evaluated at the maximum point of f in each subinterval
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+m(d)
+{{< tdclose >}}
+{{< tdopen >}}
+A Riemann sum with uniform interval size d and f evaluated at the minimum point of f in each subinterval
+{{< tdclose >}}
+
+{{< trclose >}}
+
+{{< tableclose >}}
