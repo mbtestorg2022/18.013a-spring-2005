@@ -7,6 +7,7 @@ image_metadata:
   caption: ''
   credit: ''
   image-alt: ''
+parent_uid: e8cdc347-f062-2f11-96ad-2879f268cc73
 resourcetype: Image
 title: iota_lc.gif
 uid: 5c08bad1-5f11-4216-1fe1-6b599c6fb016

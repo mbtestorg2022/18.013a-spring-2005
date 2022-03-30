@@ -7,6 +7,7 @@ image_metadata:
   caption: ''
   credit: ''
   image-alt: ''
+parent_uid: e8cdc347-f062-2f11-96ad-2879f268cc73
 resourcetype: Image
 title: zeta_lc.gif
 uid: aa8ff35c-81d6-21d7-9240-4bc779a807bb

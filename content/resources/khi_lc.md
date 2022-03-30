@@ -7,6 +7,7 @@ image_metadata:
   caption: ''
   credit: ''
   image-alt: ''
+parent_uid: e8cdc347-f062-2f11-96ad-2879f268cc73
 resourcetype: Image
 title: khi_lc.gif
 uid: 62b1695d-fa81-7296-a1c9-168da532aa1f

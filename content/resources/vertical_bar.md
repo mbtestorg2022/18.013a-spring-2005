@@ -7,6 +7,7 @@ image_metadata:
   caption: ''
   credit: ''
   image-alt: ''
+parent_uid: e8cdc347-f062-2f11-96ad-2879f268cc73
 resourcetype: Image
 title: vertical_bar.gif
 uid: 6b7dcc53-9a9f-6e41-eb5e-96a6ddd1aab0

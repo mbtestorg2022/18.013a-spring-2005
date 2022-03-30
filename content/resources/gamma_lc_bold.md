@@ -7,6 +7,7 @@ image_metadata:
   caption: ''
   credit: ''
   image-alt: ''
+parent_uid: e8cdc347-f062-2f11-96ad-2879f268cc73
 resourcetype: Image
 title: gamma_lc_bold.gif
 uid: 8aa184e5-f06b-7bad-695e-acc2ea9ee059

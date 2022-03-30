@@ -7,6 +7,7 @@ image_metadata:
   caption: ''
   credit: ''
   image-alt: ''
+parent_uid: e8cdc347-f062-2f11-96ad-2879f268cc73
 resourcetype: Image
 title: xi_lc.gif
 uid: 6c9b03a9-9c95-7c21-db91-89feb6e19a8f

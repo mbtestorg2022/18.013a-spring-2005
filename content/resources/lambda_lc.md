@@ -7,6 +7,7 @@ image_metadata:
   caption: ''
   credit: ''
   image-alt: ''
+parent_uid: e8cdc347-f062-2f11-96ad-2879f268cc73
 resourcetype: Image
 title: lambda_lc.gif
 uid: 0915f1c2-f2af-b9de-b016-e76edbb93421

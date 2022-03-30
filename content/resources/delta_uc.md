@@ -7,6 +7,7 @@ image_metadata:
   caption: ''
   credit: ''
   image-alt: ''
+parent_uid: e8cdc347-f062-2f11-96ad-2879f268cc73
 resourcetype: Image
 title: delta_uc.gif
 uid: 7bec5be3-80a0-d2c0-0b68-e2077be4db50

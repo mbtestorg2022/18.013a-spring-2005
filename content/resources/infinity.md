@@ -7,6 +7,7 @@ image_metadata:
   caption: ''
   credit: ''
   image-alt: ''
+parent_uid: e8cdc347-f062-2f11-96ad-2879f268cc73
 resourcetype: Image
 title: infinity.gif
 uid: 1cbf27b5-9559-0e0c-23a1-b457da6c6ca4

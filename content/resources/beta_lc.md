@@ -7,6 +7,7 @@ image_metadata:
   caption: ''
   credit: ''
   image-alt: ''
+parent_uid: e8cdc347-f062-2f11-96ad-2879f268cc73
 resourcetype: Image
 title: beta_lc.gif
 uid: ec20bfaa-708a-25aa-30e5-b25f819b8f15

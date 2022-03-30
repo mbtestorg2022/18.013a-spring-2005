@@ -7,6 +7,7 @@ image_metadata:
   caption: ''
   credit: ''
   image-alt: ''
+parent_uid: e8cdc347-f062-2f11-96ad-2879f268cc73
 resourcetype: Image
 title: cross_bold_red.gif
 uid: 3eec5cbe-b638-dfcf-4207-ed5003ee108a

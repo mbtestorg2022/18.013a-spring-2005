@@ -277,7 +277,7 @@ The absolute value of the number x
 Σ
 {{< tdclose >}}
 {{< tdopen >}}
-Used to denote a summation, usually the index and often their end values are written under it with upper end value above it. For example the sum of j for j=1 to n is written as ![](/courses/mathematics/18-013a-calculus-with-applications-spring-2005/study-materials/glossary_eqn1.jpg). This signifies 1 + 2 + … + n
+Used to denote a summation, usually the index and often their end values are written under it with upper end value above it. For example the sum of j for j=1 to n is written as {{< resource "33076b8e-e4da-f58d-6477-16634f14583c" >}}. This signifies 1 + 2 + … + n
 {{< tdclose >}}
 
 {{< trclose >}}
@@ -670,7 +670,7 @@ The Poisson bracket of Q and H
 {{< trclose >}}
 {{< tropen >}}
 {{< tdopen >}}
-![](/courses/mathematics/18-013a-calculus-with-applications-spring-2005/study-materials/glossary_eqn2.jpg)
+{{< resource "4c7d4ef3-7573-d243-d123-fe8722b8dfdb" >}}
 {{< tdclose >}}
 {{< tdopen >}}
 An antiderivative of f(x) expressed as a function of x
@@ -679,7 +679,7 @@ An antiderivative of f(x) expressed as a function of x
 {{< trclose >}}
 {{< tropen >}}
 {{< tdopen >}}
-![](/courses/mathematics/18-013a-calculus-with-applications-spring-2005/study-materials/glossary_eqn3.jpg)
+{{< resource "db7ac143-7a0d-d75b-dfb6-c056362a503d" >}}
 {{< tdclose >}}
 {{< tdopen >}}
 The definite integral of f from a to b. When f is positive and a \< b holds, then this is the area between the x axis the lines y = a, y = b and the curve that represents the function f between these lines

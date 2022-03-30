@@ -7,6 +7,7 @@ image_metadata:
   caption: ''
   credit: ''
   image-alt: ''
+parent_uid: e8cdc347-f062-2f11-96ad-2879f268cc73
 resourcetype: Image
 title: omega_uc.gif
 uid: e8d42614-b2d7-d7e4-f115-94cbc255e0e4

@@ -7,6 +7,7 @@ image_metadata:
   caption: ''
   credit: ''
   image-alt: ''
+parent_uid: e8cdc347-f062-2f11-96ad-2879f268cc73
 resourcetype: Image
 title: omicron_lc.gif
 uid: 40e3d207-b85e-b9fb-0f1e-9450fb216138

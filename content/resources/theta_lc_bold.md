@@ -7,6 +7,7 @@ image_metadata:
   caption: ''
   credit: ''
   image-alt: ''
+parent_uid: e8cdc347-f062-2f11-96ad-2879f268cc73
 resourcetype: Image
 title: theta_lc_bold.gif
 uid: d1788d70-0d5d-6b67-64d7-fb65d5b94354
